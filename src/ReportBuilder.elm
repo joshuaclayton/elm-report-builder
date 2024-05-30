@@ -1,30 +1,40 @@
 module ReportBuilder exposing
     ( ReportBuilder
-    , addField
-    , downloadCsv
     , new
+    , addField, withName
     , toCsv
-    , withName
+    , downloadCsv
     )
 
-{- | A report builder is a data structure that allows you to build a report
-      with a list of records and a list of fields. You can add fields to the
-      report and then generate a CSV representation of the report.
+{-| A report builder is a data structure that allows you to build a report
+with a list of records and a list of fields. You can add fields to the
+report and then generate a CSV representation of the report.
 
-   # Definition
-   @docs ReportBuilder
 
-   # Constructor
-   @docs new
+# Definition
 
-   # Modification
-   @docs addField, withName
+@docs ReportBuilder
 
-   # Output
-   @docs toCsv
 
-   # Commands
-   @docs downloadCsv
+# Constructor
+
+@docs new
+
+
+# Modification
+
+@docs addField, withName
+
+
+# Output
+
+@docs toCsv
+
+
+# Commands
+
+@docs downloadCsv
+
 -}
 
 import Csv.Encode as CsvEncode
