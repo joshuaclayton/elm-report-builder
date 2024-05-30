@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "build": "./node_modules/.bin/elm make",
+    "test": "./node_modules/.bin/elm-test",
+    "format": "./node_modules/.bin/elm-format . --validate"
+  },
+  "devDependencies": {
+    "elm": "^0.19.1-6",
+    "elm-doc-preview": "^1.0.7",
+    "elm-format": "^0.8.7",
+    "elm-test": "^0.19.1-revision12"
+  }
+}
