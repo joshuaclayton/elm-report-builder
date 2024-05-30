@@ -1,35 +1,51 @@
 module ReportBuilder.Field exposing
-    ( Field
-    , FieldAccess
-    , bool
-    , encode
-    , header
-    , int
-    , isNumeric
-    , lengthOf
+    ( Field, FieldAccess
     , new
-    , numeric
+    , bool, int, string
     , optional
-    , string
+    , lengthOf
+    , encode, header
+    , isNumeric, numeric
     )
 
-{- | `ReportBuilder.Field` provides a way to define fields that can be used to
-   generate reports.
+{-| `ReportBuilder.Field` provides a way to define fields that can be used to
+generate reports.
 
-   # Definitions
-   @docs Field, FieldAccess
 
-   # Constructor
-   @docs new
+# Definitions
 
-   # Field Types
-   @docs bool, int, string
+@docs Field, FieldAccess
 
-   # Field Modifiers
-   @docs optional
 
-   # Computed FieldAccess
-   @docs lengthOf
+# Constructor
+
+@docs new
+
+
+# Field Types
+
+@docs bool, int, string
+
+
+# Field Modifiers
+
+@docs optional
+
+
+# Computed FieldAccess
+
+@docs lengthOf
+
+
+# Generate values
+
+@docs encode, header
+
+
+# Annotate numeric values
+
+@docs isNumeric, numeric
+
 -}
 
 
